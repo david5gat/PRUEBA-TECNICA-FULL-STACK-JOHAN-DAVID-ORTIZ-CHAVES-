@@ -27,7 +27,6 @@ Aplicación para:
 - Visualizar estadísticas: promedio por materia y mejores puestos
 - Ver notas agrupadas por materia ("Listar notas por alumno en cada materia")
 
-El objetivo es ofrecer una solución completa y reproducible para presentación en evaluación universitaria.
 
 ## 2) Tecnologías
 
