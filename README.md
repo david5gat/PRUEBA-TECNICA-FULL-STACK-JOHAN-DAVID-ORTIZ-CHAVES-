@@ -5,8 +5,8 @@
 4. dentro del frontend ```npm install ```
 5. en la terminal ``` cd .. ``` para volver al proyecto
 6. instala Docker Desktop y abrirlo
-7 en una terminal dentro de la raiz de proyecto ejecuta ``` docker-compose build ```
-8.y luego para desplegar el servidor   ``` docker-compose up -d ```
+7. en una terminal dentro de la raiz de proyecto ejecuta ``` docker-compose build ```
+8. y luego para desplegar el servidor   ``` docker-compose up -d ```
 
 ### en total seran 5 comandos y 8 pasos a seguir
 -----------------------------------------------------------------------------------------------------------------------------
