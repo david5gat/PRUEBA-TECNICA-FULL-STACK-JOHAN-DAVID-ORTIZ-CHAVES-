@@ -1,3 +1,13 @@
+#Inicio Instalacion
+1. Descargar nodejs
+2. git clone https://github.com/david5gat/PRUEBA-TECNICA-FULL-STACK-JOHAN-DAVID-ORTIZ-CHAVES-.git
+3. en la raiz del proyecto cd frontend
+4. dentro del frotnend npm install
+5. en la terminal cd .. para volver al proyecto
+6. instala Docker Destop y abrelo
+7. docker-compose build
+8. docker-compose up -d
+-----------------------------------------------------------------------------------------------------------------------------
 # Academia — Sistema de Gestión
 
 Este repositorio contiene una aplicación full‑stack para gestionar alumnos, materias y notas. Está pensada como un proyecto serio para evaluación académica: código organizado, Docker para despliegue, y un frontend moderno en React + TypeScript.
