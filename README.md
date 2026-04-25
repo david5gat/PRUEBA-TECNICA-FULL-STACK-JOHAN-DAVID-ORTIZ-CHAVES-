@@ -10,7 +10,20 @@
 9. para ver la aplicacion entra a : http://localhost:5173
 
 ### en total seran 5 comandos y 9 pasos a seguir
------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+# Variables de entorno
+
+ENV DB_DRIVER=postgresql
+ENV DB_HOST=postgres
+ENV DB_PORT=5432
+ENV DB_NAME=academia_db
+ENV DB_USER=postgres
+ENV DB_PASSWORD=password
+ENV DB_DRIVER_CLASS=org.postgresql.Driver
+ENV HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
+ENV SERVER_PORT=8080
+--------------------------------------------------------------------------------------------------------------------------------------------
 # Academia — Sistema de Gestión
 
 Este repositorio contiene una aplicación full‑stack para gestionar alumnos, materias y notas. Está pensada como un proyecto serio para evaluación académica: código organizado, Docker para despliegue, y un frontend moderno en React + TypeScript.
