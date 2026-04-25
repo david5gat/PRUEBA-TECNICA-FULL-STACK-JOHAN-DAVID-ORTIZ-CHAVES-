@@ -1,12 +1,14 @@
 # Inicio Instalacion
 1. Descargar nodejs
 2. git clone https://github.com/david5gat/PRUEBA-TECNICA-FULL-STACK-JOHAN-DAVID-ORTIZ-CHAVES-.git
-3. en la raiz del proyecto cd frontend
-4. dentro del frontend npm install
+3. en la raiz del proyecto ```cd frontend ```
+4. dentro del frontend ```npm install ```
 5. en la terminal ``` cd .. ``` para volver al proyecto
 7. instala Docker Destop y abrelo
-8. en una terminal dentro de la raiz de proyecto ejecuta
-   ``` docker-compose build ``` ``` docker-compose up -d ```
+8. en una terminal dentro de la raiz de proyecto ejecuta ``` docker-compose build ```
+9.y luego para desplegar el servidor   ``` docker-compose up -d ```
+## en total seran 5 comandos
+## y 9 pasos a seguir
 -----------------------------------------------------------------------------------------------------------------------------
 # Academia — Sistema de Gestión
 
