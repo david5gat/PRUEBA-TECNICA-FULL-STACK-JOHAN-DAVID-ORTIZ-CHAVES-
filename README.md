@@ -7,8 +7,8 @@
 7. instala Docker Destop y abrelo
 8. en una terminal dentro de la raiz de proyecto ejecuta ``` docker-compose build ```
 9.y luego para desplegar el servidor   ``` docker-compose up -d ```
-## en total seran 5 comandos
-## y 9 pasos a seguir
+#### en total seran 5 comandos
+#### y 9 pasos a seguir
 -----------------------------------------------------------------------------------------------------------------------------
 # Academia — Sistema de Gestión
 
