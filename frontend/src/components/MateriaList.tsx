@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { Materia } from '../types';
-import { materiaService, notaService } from '../services/api';
-import { generateMateriaPdf, generateMateriasListPdf } from '../utils/pdf';
+import { materiaService } from '../services/api';
+import { generateMateriasListPdf } from '../utils/pdf';
 
 interface MateriaListProps {
   onEdit: (materia: Materia) => void;

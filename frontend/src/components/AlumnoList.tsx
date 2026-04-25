@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { Alumno } from '../types';
-import { alumnoService, notaService } from '../services/api';
-import { generateAlumnoPdf, generateAlumnosListPdf } from '../utils/pdf';
+import { alumnoService } from '../services/api';
+import { generateAlumnosListPdf } from '../utils/pdf';
 
 interface AlumnoListProps {
   onEdit: (alumno: Alumno) => void;

@@ -1,5 +1,6 @@
 # Inicio Instalacion
-1. Insalar nodejs
+1. Insalar nodejs y actualizar en una terminal con ```npm install -g npm@latest
+```
 2. git clone https://github.com/david5gat/PRUEBA-TECNICA-FULL-STACK-JOHAN-DAVID-ORTIZ-CHAVES-.git
 3. en la raiz del proyecto ```cd frontend ```
 4. dentro del frontend ```npm install ```
