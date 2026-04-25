@@ -1,4 +1,4 @@
-#Inicio Instalacion
+# Inicio Instalacion
 1. Descargar nodejs
 2. git clone https://github.com/david5gat/PRUEBA-TECNICA-FULL-STACK-JOHAN-DAVID-ORTIZ-CHAVES-.git
 3. en la raiz del proyecto cd frontend
