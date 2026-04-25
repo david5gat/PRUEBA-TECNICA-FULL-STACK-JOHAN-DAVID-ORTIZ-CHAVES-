@@ -1,4 +1,4 @@
-# Academia — Sistema de Gestión (Proyecto — Universidad)
+# Academia — Sistema de Gestión
 
 Este repositorio contiene una aplicación full‑stack para gestionar alumnos, materias y notas. Está pensada como un proyecto serio para evaluación académica: código organizado, Docker para despliegue, y un frontend moderno en React + TypeScript.
 
@@ -173,7 +173,8 @@ docker-compose down -v
 
 ## 10) Créditos y notas finales
 
-Proyecto desarrollado como entrega / demostración de un sistema completo para gestión académica. Está pensado para ser evaluable en entornos universitarios: código legible, instrucciones claras y despliegue reproducible.
+Proyecto desarrollado como entrega / demostración de un sistema completo para gestión académica. 
+código legible, instrucciones claras y despliegue reproducible.
 
 Si quieres que prepare un paquete final, un script de despliegue automatico o un video corto presentando la app, dímelo y lo preparo.
 
