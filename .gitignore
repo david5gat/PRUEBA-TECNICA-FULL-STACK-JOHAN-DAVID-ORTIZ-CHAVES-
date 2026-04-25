@@ -1,0 +1,25 @@
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+target/
+*/node_modules/
+*/target/
+
+# Environment
+.env
+.env.local
+*.env.local
+
+# Build
+dist/
+build/

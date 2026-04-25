@@ -1,0 +1,68 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: academia_postgres
+    environment:
+      POSTGRES_DB: academia_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database-dump:/docker-entrypoint-initdb.d
+    networks:
+      - academia-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: academia_api
+    environment:
+      DB_DRIVER: postgresql
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: academia_db
+      DB_USER: postgres
+      DB_PASSWORD: postgres123
+      DB_DRIVER_CLASS: org.postgresql.Driver
+      HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
+      SERVER_PORT: 8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - academia-network
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: academia_frontend
+    environment:
+      VITE_API_URL: http://api:8080/api
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
+    networks:
+      - academia-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  academia-network:
+    driver: bridge
