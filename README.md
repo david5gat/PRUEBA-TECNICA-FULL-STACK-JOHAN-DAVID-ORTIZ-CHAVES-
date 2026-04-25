@@ -7,8 +7,9 @@
 6. instala Docker Desktop y abrirlo
 7. en una terminal dentro de la raiz de proyecto ejecuta ``` docker-compose build ```
 8. y luego para desplegar el servidor   ``` docker-compose up -d ```
+9. para ver la aplicacion entra a : http://localhost:5173
 
-### en total seran 5 comandos y 8 pasos a seguir
+### en total seran 5 comandos y 9 pasos a seguir
 -----------------------------------------------------------------------------------------------------------------------------
 # Academia — Sistema de Gestión
 
