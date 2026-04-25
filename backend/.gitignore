@@ -1,0 +1,37 @@
+# Backend dependencies
+target/
+.classpath
+.project
+.settings
+.springBeans
+.sts4-cache
+.properties
+
+# IDE
+.vscode
+.idea
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+
+# Misc
+.DS_Store
+*.log
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+dependency-reduced-pom.xml
+buildNumber.properties
+.maven.metadata.xml
+
+# Environment
+.env.local

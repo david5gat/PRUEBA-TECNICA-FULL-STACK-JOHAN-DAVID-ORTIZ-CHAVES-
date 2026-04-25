@@ -1,0 +1,51 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: academia_postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database-dump:/docker-entrypoint-initdb.d
+    networks:
+      - academia-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: academia_api
+    environment:
+      DB_DRIVER: ${DB_DRIVER}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_DRIVER_CLASS: ${DB_DRIVER_CLASS}
+      HIBERNATE_DIALECT: ${HIBERNATE_DIALECT}
+      SERVER_PORT: ${SERVER_PORT}
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - academia-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  academia-network:
+    driver: bridge
