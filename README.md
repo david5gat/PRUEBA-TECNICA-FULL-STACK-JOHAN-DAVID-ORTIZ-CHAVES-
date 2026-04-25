@@ -3,10 +3,10 @@
 2. git clone https://github.com/david5gat/PRUEBA-TECNICA-FULL-STACK-JOHAN-DAVID-ORTIZ-CHAVES-.git
 3. en la raiz del proyecto cd frontend
 4. dentro del frontend npm install
-5. en la terminal cd .. para volver al proyecto
-6. instala Docker Destop y abrelo
-7. docker-compose build
-8. docker-compose up -d
+5. en la terminal ``` cd .. ``` para volver al proyecto
+7. instala Docker Destop y abrelo
+8. en una terminal dentro de la raiz de proyecto ejecuta
+   ``` docker-compose build ``` ``` docker-compose up -d ```
 -----------------------------------------------------------------------------------------------------------------------------
 # Academia — Sistema de Gestión
 
